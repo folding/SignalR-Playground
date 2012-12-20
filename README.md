@@ -44,4 +44,4 @@ Connected clients add a 'Shared Cursor' that slowly fades away and is removed.
 ## Google Wave-ish Messages
 Added section at the top of the page that broadcasts messages on key up as they 
 are typed. Pressing Enter or clicking the 'Wave' button ends the current message.  
-All connected clients see the wave messages.
+All connected clients see the wave messages. 
