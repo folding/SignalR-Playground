@@ -1,11 +1,8 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>ASP.NET SignalR Stock Ticker</title>
-    <link href="StockTicker.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>ASP.NET SignalR Stock Ticker Sample</h1>
+﻿@{
+    ViewBag.Title = "Playground";
+}
+
+    <h1>SignalR Playground</h1>
     <input type="text" id="waveMessage" /><button id="waveButton">Wave</button>
     <ul id="wavePool"></ul>
     <input type="button" id="open" value="Open Market" />
@@ -36,11 +33,3 @@
     <h2>Message</h2>    
     <input type="text" id="sendMessage" /><button id="sendButton">Send</button>
     <ul id="msg"></ul>
-
-    <script src="../bundles/jquery"></script>
-    <script src="../bundles/jquerycolor"></script>
-    <script src="../Scripts/jquery.signalR-1.0.0-rc1.js"></script>
-    <script src="../signalr/hubs"></script>
-    <script src="SignalR.StockTicker.js"></script>
-</body>
-</html>

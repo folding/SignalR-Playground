@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Caching;
 using Microsoft.AspNet.SignalR.StockTicker;
+using System.Web.Optimization;
 
 namespace SignalRTest
 {
@@ -27,10 +28,19 @@ namespace SignalRTest
 
             routes.MapRoute(
                 "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
+                "playground", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
+        }
+
+        public static void ConfigureBundles()
+        {
+            BundleTable.Bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                "~/Scripts/jquery-{version}.js"));
+
+            BundleTable.Bundles.Add(new ScriptBundle("~/bundles/jquerycolor").Include(
+                "~/Scripts/jquery.color-{version}.js"));
         }
 
         protected void Application_Start()
@@ -40,6 +50,7 @@ namespace SignalRTest
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
+            ConfigureBundles();
 
             AddTask("DoStuff", 1);
         }

@@ -53,7 +53,7 @@
     
     .sharedCursor
     {
-        background-image:url(../img/pointer_nonselected.gif);
+        background-image:url(img/pointer_nonselected.gif);
         position:absolute;
         left:300px;
         top:150px;
