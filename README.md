@@ -2,9 +2,11 @@
 
 This started as a new project in Visual Studio and nuget'd the StockTicker 
 package into it. I forked of the SignalR/SignalR-StockTicker project and 
-blew it away just for reference purposes.
+blew it away just for lineage reference purposes.  It is deployed here:
 
-I added the following things in the following order as I went about learning 
+http://johncarlson.co/projects/signalr/playground
+
+I added/modified the following things in the following order as I went about playing with 
 SignalR:
 
 ## Market State Messages 
